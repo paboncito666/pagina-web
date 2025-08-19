@@ -133,6 +133,21 @@
       transform: scale(1.05);
     }
 
+    .cta-btn {
+      display: inline-block;
+      background-color: #4caf50;
+      color: white;
+      font-weight: bold;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .cta-btn:hover {
+      background-color: #388e3c;
+    }
+
     footer {
       background: #2e7d32;
       color: white;
@@ -220,7 +235,7 @@
   </div>
 
   <h2>Contacto</h2>
-  <form action="formulario">
+  <form onsubmit="event.preventDefault(); alert('Formulario enviado con éxito ✅');">
     <label for="nombre">Nombre:</label>
     <input type="text" id="nombre" name="nombre" required>
 
@@ -256,4 +271,3 @@
 
 </body>
 </html>
-
